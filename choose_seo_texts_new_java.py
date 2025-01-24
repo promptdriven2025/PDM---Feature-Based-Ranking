@@ -38,7 +38,7 @@ if __name__ == '__main__':
             print("ERROR! bot name contains $")
 
         for pos in tqdm(["2", "3", "4", "5"]):
-            if os.path.exists(f"./g_output/saved_result_files/bot_followup_asrc_{nick}_{pos}.csv"):
+            if os.path.exists(f"./g_output/saved_result_files/bot_followup_comp_{nick}_{pos}.csv"):
                 continue
 
             working_set_file_path = f'/lv_local/home/user/content_modification_code-master/g_output/saved_result_files/{archive_dir}/ws_output_{pos}.txt'
@@ -90,12 +90,12 @@ if __name__ == '__main__':
             final_df = final_df[["round_no", "query_id", "creator", "username", "text"]]
             final_df["round_no"] = final_df["round_no"].str.replace("0", "")
 
-            final_df.to_csv(f"./g_output/saved_result_files/bot_followup_asrc_{nick}_{pos}.csv", index=False)
+            final_df.to_csv(f"./g_output/saved_result_files/bot_followup_comp_{nick}_{pos}.csv", index=False)
 
 
     df = pd.concat(
-        [pd.read_csv(file) for file in glob.glob("./g_output/saved_result_files/bot_followup_asrc_*.csv")],
+        [pd.read_csv(file) for file in glob.glob("./g_output/saved_result_files/bot_followup_comp_*.csv")],
         ignore_index=True).sort_values(["round_no", "query_id", "creator"])
 
-    df.to_csv("./g_output/saved_result_files/bot_followup_asrc.csv", index=False)
+    df.to_csv("./g_output/saved_result_files/bot_followup_comp.csv", index=False)
     print("\n\n########## created bot followup file for all models and positions ##########\n\n")
