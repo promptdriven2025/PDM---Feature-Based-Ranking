@@ -7,7 +7,7 @@ INSTRUCTIONS\WALKTHROUGH - HOW TO RUN SEO COMPETITION
 	/lv_local/home/user/content_modification_code-master/create_bot_features.py to create features (pay attention to ref doc \ location number)
 	/lv_local/home/user/content_modification_code-master/choose_seo_texts.py (change pos argument!) to create the texts followup.
 	Pay attention! change raw_ds_out into raw_ds_out_{pos}, move to saved_result_files and run first than second for all relevant positions
-	move bot_followup_asrc.csv to /lv_local/home/user/CharPDM
+	move bot_followup_comp.csv to /lv_local/home/user/CharPDM
 3. change the prompt in /lv_local/home/user/CharPDM/competition_chatgpt.py if nescessary and run the 
 	script to acheive the SEO texts
 4. run /lv_local/home/user/CharPDM/text_validation.py to validate the texts validity and create 
