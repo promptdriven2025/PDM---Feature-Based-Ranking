@@ -1,0 +1,62 @@
+<parameters>
+<query>
+<number>009</number>
+<text>#combine( car parts )</text>
+</query>
+<query>
+<number>017</number>
+<text>#combine( poker tournaments )</text>
+</query>
+<query>
+<number>029</number>
+<text>#combine( ps 2 games )</text>
+</query>
+<query>
+<number>034</number>
+<text>#combine( cell phones )</text>
+</query>
+<query>
+<number>045</number>
+<text>#combine( solar panels )</text>
+</query>
+<query>
+<number>048</number>
+<text>#combine( wilson antenna )</text>
+</query>
+<query>
+<number>059</number>
+<text>#combine( build fence )</text>
+</query>
+<query>
+<number>069</number>
+<text>#combine( sewing instructions )</text>
+</query>
+<query>
+<number>078</number>
+<text>#combine( dieting )</text>
+</query>
+<query>
+<number>098</number>
+<text>#combine( sat )</text>
+</query>
+<query>
+<number>167</number>
+<text>#combine( barbados )</text>
+</query>
+<query>
+<number>180</number>
+<text>#combine( newyork hotels )</text>
+</query>
+<query>
+<number>182</number>
+<text>#combine( quit smoking )</text>
+</query>
+<query>
+<number>193</number>
+<text>#combine( dog clean up bags )</text>
+</query>
+<query>
+<number>195</number>
+<text>#combine( pressure washers )</text>
+</query>
+</parameters>

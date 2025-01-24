@@ -1,0 +1,20 @@
+INSTRUCTIONS\WALKTHROUGH - HOW TO RUN SEO COMPETITION
+* Assuming you ran "create_g_data.py" and you have the competition data:
+1. change the variable "current_prompt" to the name your run in config.py (integer recommended) 
+2. run /lv_local/home/user/CharPDM/create_bot_followup_file.py to create an empty bot_followup_{cp}.csv 
+	file
+2.5 *** If BOT docs are needed . create BOT documents by running 
+	/lv_local/home/user/content_modification_code-master/create_bot_features.py to create features (pay attention to ref doc \ location number)
+	/lv_local/home/user/content_modification_code-master/choose_seo_texts.py (change pos argument!) to create the texts followup.
+	Pay attention! change raw_ds_out into raw_ds_out_{pos}, move to saved_result_files and run first than second for all relevant positions
+	move bot_followup_asrc.csv to /lv_local/home/user/CharPDM
+3. change the prompt in /lv_local/home/user/CharPDM/competition_chatgpt.py if nescessary and run the 
+	script to acheive the SEO texts
+4. run /lv_local/home/user/CharPDM/text_validation.py to validate the texts validity and create 
+	bot_followup_{cp}.trectext & working_set_{cp}.trectext
+5. move trectext files to the folder /lv_local/home/user/content_modification_code-master/trecs
+6. in the file /lv_local/home/user/content_modification_code-master/ranking_logic_example.py change 
+	the argument current_times = ["{cp}"] and run it to merge the index and ranks the texts.
+	If you are running the same "cp" make sure you delete both the relevant index and features from the results folder
+7. run /lv_local/home/user/CharPDM/ranking_stats.py (cp already supposed to be the correct one in 
+	config.py, validate it). in the end we get the new feature file

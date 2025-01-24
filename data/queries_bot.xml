@@ -1,0 +1,62 @@
+<parameters>
+<query>
+<number>010</number>
+<text>#combine( cheap internet )</text>
+</query>
+<query>
+<number>013</number>
+<text>#combine( map )</text>
+</query>
+<query>
+<number>018</number>
+<text>#combine( wedding budget calculator )</text>
+</query>
+<query>
+<number>032</number>
+<text>#combine( website design hosting )</text>
+</query>
+<query>
+<number>033</number>
+<text>#combine( elliptical trainer )</text>
+</query>
+<query>
+<number>034</number>
+<text>#combine( cell phones )</text>
+</query>
+<query>
+<number>048</number>
+<text>#combine( wilson antenna )</text>
+</query>
+<query>
+<number>051</number>
+<text>#combine( horse hooves )</text>
+</query>
+<query>
+<number>069</number>
+<text>#combine( sewing instructions )</text>
+</query>
+<query>
+<number>167</number>
+<text>#combine( barbados )</text>
+</query>
+<query>
+<number>177</number>
+<text>#combine( best long term care insurance )</text>
+</query>
+<query>
+<number>180</number>
+<text>#combine( newyork hotels )</text>
+</query>
+<query>
+<number>182</number>
+<text>#combine( quit smoking )</text>
+</query>
+<query>
+<number>193</number>
+<text>#combine( dog clean up bags )</text>
+</query>
+<query>
+<number>195</number>
+<text>#combine( pressure washers )</text>
+</query>
+</parameters>
