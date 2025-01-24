@@ -21,7 +21,7 @@ def create_bot_followp():
     df['creator'] = df.docno.apply(lambda x: x.split('$')[0].split('-')[-1])
     df['username'] = df.docno
     df = df[['round_no', 'query_id', 'creator', 'username', 'text']]
-    df.to_csv(f'/lv_local/home/user/content_modification_code-master/g_output/bot_followup_asrcqrels.csv',
+    df.to_csv(f'/lv_local/home/user/content_modification_code-master/g_output/bot_followup_compqrels.csv',
               index=False)
 
 
@@ -45,12 +45,12 @@ def create_bot_followp_test():
     df['creator'] = df.docno.apply(lambda x: x.split('$')[0].split('-')[-1])
     df['username'] = df.docno
     df = df[['round_no', 'query_id', 'creator', 'username', 'text']]
-    df.to_csv(f'/lv_local/home/user/content_modification_code-master/g_output/bot_followup_asrcqrelstest.csv',
+    df.to_csv(f'/lv_local/home/user/content_modification_code-master/g_output/bot_followup_compqrelstest.csv',
               index=False)
 
 
 def get_qrels_file():
-    file_path = f'/lv_local/home/user/content_modification_code-master/Results/RankedLists/LambdaMARTasrcqrels'
+    file_path = f'/lv_local/home/user/content_modification_code-master/Results/RankedLists/LambdaMARTcompqrels'
     columns = ['query_id_long', 'Q0', 'docno_long', 'rank', 'score', 'method']
 
     with open(file_path, 'r') as file:
@@ -83,7 +83,7 @@ def get_qrels_file():
     for idx, row in merged_df.iterrows():
         lines.append(f"{row.final_qid} 0 {row.final_docno} {row.rank_promotion}\n")
 
-    with open("/lv_local/home/user/train_RankSVM/qrels_niv.txt", 'w') as file:
+    with open("/lv_local/home/user/train_RankSVM/qrels_n.txt", 'w') as file:
         file.writelines(lines)
 
 
